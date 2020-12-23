@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".add">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#204028"
+        tools:context=".cekStok"
+        tools:layout_editor_absoluteX="25dp"
+        tools:layout_editor_absoluteY="16dp">
+
+        <ImageView
+            android:id="@+id/imageView3"
+            android:layout_width="218dp"
+            android:layout_height="83dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="236dp"
+            android:background="@android:color/transparent"
+            android:contentDescription="@string/Logo"
+            android:scaleType="fitStart"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/logo_olahwht" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_begin="20dp" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_end="391dp" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_end="32dp" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_begin="242dp" />
+
+        <ImageButton
+            android:id="@+id/addnewData"
+            android:layout_width="358dp"
+            android:layout_height="66dp"
+            android:layout_marginEnd="32dp"
+            android:layout_marginBottom="40dp"
+            android:background="@android:color/transparent"
+            android:contentDescription="@string/add_newData"
+            android:scaleType="fitXY"
+            app:layout_constraintBottom_toTopOf="@+id/AddTodaysales"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:srcCompat="@drawable/asset_22" />
+
+        <ImageButton
+            android:id="@+id/AddTodaysales"
+            android:layout_width="358dp"
+            android:layout_height="65dp"
+            android:layout_marginEnd="32dp"
+            android:layout_marginBottom="336dp"
+            android:background="@android:color/transparent"
+            android:contentDescription="@string/today_sales"
+            android:scaleType="fitXY"
+            android:tint="#FFFFFF"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:srcCompat="@drawable/asset_26" />
+
+        <TextView
+            android:id="@+id/addData"
+            android:layout_width="172dp"
+            android:layout_height="40dp"
+            android:layout_marginEnd="172dp"
+            android:layout_marginBottom="8dp"
+            android:fontFamily="sans-serif-black"
+            android:text="@string/addData"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toBottomOf="@+id/addnewData"
+            app:layout_constraintEnd_toStartOf="@+id/guideline3" />
+
+        <TextView
+            android:id="@+id/addTodaysalestx"
+            android:layout_width="172dp"
+            android:layout_height="40dp"
+            android:layout_marginEnd="172dp"
+            android:layout_marginBottom="8dp"
+            android:fontFamily="sans-serif-black"
+            android:text="@string/addTodaysales"
+            android:textColor="#0D293E"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toBottomOf="@+id/AddTodaysales"
+            app:layout_constraintEnd_toStartOf="@+id/guideline3" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline12"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_begin="174dp" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline13"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_begin="278dp" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline14"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_begin="349dp" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

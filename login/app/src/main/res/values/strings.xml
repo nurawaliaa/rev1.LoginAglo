@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">login</string>
+    <string name="button">Log In</string>
+    <string name="hintemail">Enter Your Email</string>
+    <string name="hintpass">Enter Your Password</string>
+    <string name="headtitleloginpage">headtitleloginpage</string>
+    <string name="cekstok">cekstok</string>
+    <string name="laporan">laporan</string>
+    <string name="edit">edit</string>
+    <string name="penjualan">penjualan</string>
+    <string name="todo">TODO</string>
+    <string name="todo">TODO</string>
+</resources>

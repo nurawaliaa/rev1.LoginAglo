@@ -1,0 +1,42 @@
+<resources>
+    <string name="app_name">LoginAglo</string>
+    <string name="buttonLogin">Log In</string>
+    <string name="todo">TODO</string>
+    <string name="email"> Email</string>
+    <string name="pass">  Password</string>
+    <string name="Login">Sign In</string>
+    <string name="SignUp">Sign Up</string>
+    <string name="Username">Username</string>
+    <string name="Home">buttonHome</string>
+    <string name="add">addItem</string>
+    <string name="menu">Menu</string>
+    <string name="report">Report</string>
+    <string name="stock">Stock</string>
+    <string name="home">Home</string>
+    <string name="Logo">TODO</string>
+    <string name="here">Sign Up</string>
+    <string name="belumRegis">Belum Memiliki Akun?</string>
+    <string name="Uname">Park Chanyeol</string>
+    <string name="posistion">Manager</string>
+    <string name="tdl">To do List,</string>
+    <string name="ava">userava</string>
+    <string name="wrt">Write something</string>
+    <string name="adddata">addData</string>
+    <string name="addnew">addData</string>
+    <string name="today_sales">today sales</string>
+    <string name="add_newData">add new</string>
+    <string name="addd">Add</string>
+    <string name="addData">Data Baru</string>
+    <string name="addTodaysales">Penjualan Hari Ini</string>
+    <string name="HaddId">ID</string>
+    <string name="Hname">Name</string>
+    <string name="Hjenis">Kind Of</string>
+    <string name="Hamount">Amount</string>
+    <string name="Hprices">Price</string>
+    <string name="Hcond">Condition</string>
+    <string name="ButtonCancel">cancel button</string>
+    <string name="buttonSave">save button</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+</resources>
