@@ -6,13 +6,12 @@ import android.os.Bundle
 import android.os.PatternMatcher
 import android.util.Patterns
 import android.view.View
-import android.widget.Button
-import android.widget.EditText
-import android.widget.ImageButton
-import android.widget.Toast
-import com.google.firebase.database.FirebaseDatabase
+import android.widget.*
+import androidx.recyclerview.widget.RecyclerView
+import com.google.firebase.database.*
 import kotlinx.android.synthetic.main.activity_add_data__page.*
 import kotlinx.android.synthetic.main.activity_main.*
+
 
 class addData_Page : AppCompatActivity(), View.OnClickListener {
 
@@ -21,6 +20,9 @@ class addData_Page : AppCompatActivity(), View.OnClickListener {
     private lateinit var etPrices: EditText
    //private lateinit var etId: EditText
     private lateinit var btnSave: ImageButton
+    private lateinit var item : ListView
+    private lateinit var  ref : DatabaseReference
+    private lateinit var stockList : MutableList<cekStock>
 
 
 
@@ -28,11 +30,37 @@ class addData_Page : AppCompatActivity(), View.OnClickListener {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_add_data__page)
 
+        ref = FirebaseDatabase.getInstance().getReference("ItemName")
+        item = findViewById(R.id.lv_item)
         etNama = findViewById(R.id.addName)
         etJumlah = findViewById(R.id.addAmount)
         etPrices = findViewById(R.id.addPrices)
         //etId = findViewById(R.id.addId)
         btnSave = findViewById(R.id.buttonSave)
+
+
+        stockList = mutableListOf()
+
+        ref.addValueEventListener(object : ValueEventListener{
+            override fun onDataChange(snapshot: DataSnapshot) {
+             if(snapshot.exists()){
+                 for(h in snapshot.children ){
+                     val ItemName: cekStock?  = h.getValue(cekStock::class.java)
+                     if (ItemName != null) {
+                         stockList.add(ItemName)
+                     }
+
+                 }
+                 val adapter = cekStockAdapter(applicationContext, R.layout.item_stock, stockList)
+                 item.adapter = adapter
+             }
+            }
+
+            override fun onCancelled(error: DatabaseError) {
+                TODO("Not yet implemented")
+            }
+
+        })
 
         buttonCancel.setOnClickListener{
             val intent = Intent (this@addData_Page, add::class.java)
@@ -82,7 +110,7 @@ class addData_Page : AppCompatActivity(), View.OnClickListener {
             etPrices.requestFocus()
             return
         }
-        val ref = FirebaseDatabase.getInstance().getReference("ItemName")
+
 
         val itemNameId = ref.push().key
         val iname = ItemName(itemNameId,nama,jumlah,price)
@@ -104,4 +132,10 @@ class addData_Page : AppCompatActivity(), View.OnClickListener {
             }
         }
     }
+
+    private fun ItemName(itemNameId: String?, nama: String, jumlah: String, price: String): Any? {
+        return itemNameId
+    }
 }
+
+

@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".mainPage"
-    android:background="#204028">
+    android:background="@drawable/bggradient">
 
 
     <TextView
@@ -71,7 +71,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="25dp"
         android:layout_marginEnd="21dp"
-        android:text="LOG OUT"
+        android:text="@string/Logout"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -79,8 +79,8 @@
         android:id="@+id/buttonCekStock"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginEnd="260dp"
-        android:layout_marginBottom="4dp"
+        android:layout_marginEnd="304dp"
+        android:layout_marginBottom="228dp"
         android:text="@string/stock"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent" />
@@ -89,8 +89,8 @@
         android:id="@+id/buttonAdd"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginEnd="160dp"
-        android:layout_marginBottom="4dp"
+        android:layout_marginEnd="304dp"
+        android:layout_marginBottom="168dp"
         android:text="@string/addd"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent" />

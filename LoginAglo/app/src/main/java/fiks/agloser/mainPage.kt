@@ -7,7 +7,7 @@ import androidx.fragment.app.Fragment
 import com.google.firebase.auth.FirebaseAuth
 import kotlinx.android.synthetic.main.activity_add.*
 import kotlinx.android.synthetic.main.activity_main_page.*
-import kotlinx.android.synthetic.main.fragment_satu.*
+
 
 class mainPage : AppCompatActivity() {
 
@@ -17,17 +17,7 @@ class mainPage : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main_page)
 
-        /*val fragmentSatu = FragmentSatu()
-        val fragment:Fragment? = supportFragmentManager.findFragmentByTag(FragmentSatu::class.java.simpleName)
 
-
-
-        if (fragment !is  FragmentSatu){
-            supportFragmentManager.beginTransaction()
-                .add(R.id.container, fragmentSatu, FragmentSatu::class.java.simpleName)
-                .commit()
-        }
- */
         mAuth = FirebaseAuth.getInstance()
 
         buttonLogOut.setOnClickListener{
@@ -43,12 +33,6 @@ class mainPage : AppCompatActivity() {
             startActivity(intent)
 
         }
-        buttonCekStock.setOnClickListener{
-            val intent = Intent (this@mainPage, cekStok::class.java)
 
-                startActivity(intent)
-
-
-        }
     }
 }

@@ -18,15 +18,15 @@
             android:layout_height="match_parent"
             android:background="#204028"
             tools:context=".cekStok"
-            tools:layout_editor_absoluteX="0dp"
-            tools:layout_editor_absoluteY="-27dp">
+            tools:layout_editor_absoluteX="16dp"
+            tools:layout_editor_absoluteY="62dp">
 
             <androidx.constraintlayout.widget.Guideline
                 android:id="@+id/guideline2"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:orientation="vertical"
-                app:layout_constraintGuide_end="391dp" />
+                app:layout_constraintGuide_end="430dp" />
 
             <androidx.constraintlayout.widget.Guideline
                 android:id="@+id/guideline3"
@@ -144,27 +144,36 @@
                 android:id="@+id/buttonSave"
                 android:layout_width="356dp"
                 android:layout_height="37dp"
-                android:layout_marginTop="81dp"
-                android:layout_marginEnd="32dp"
+                android:layout_marginEnd="52dp"
+                android:layout_marginBottom="4dp"
                 android:background="@android:color/transparent"
                 android:contentDescription="@string/buttonSave"
                 android:scaleType="fitXY"
+                app:layout_constraintBottom_toTopOf="@+id/buttonCancel"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/addPrices"
                 app:srcCompat="@drawable/save" />
 
             <ImageButton
                 android:id="@+id/buttonCancel"
                 android:layout_width="356dp"
                 android:layout_height="35dp"
-                android:layout_marginTop="12dp"
                 android:layout_marginEnd="32dp"
                 android:background="@android:color/transparent"
+                android:contentDescription="@string/ButtonCancel"
                 android:scaleType="fitXY"
+                app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/buttonSave"
-                app:srcCompat="@drawable/cancel"
-                android:contentDescription="@string/ButtonCancel" />
+                app:srcCompat="@drawable/cancel" />
+
+            <ListView
+                android:id="@+id/lv_item"
+                android:layout_width="361dp"
+                android:layout_height="160dp"
+                android:layout_marginBottom="44dp"
+                app:layout_constraintBottom_toTopOf="@+id/buttonCancel"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.32"
+                app:layout_constraintStart_toStartOf="parent" />
 
         </androidx.constraintlayout.widget.ConstraintLayout>
     </androidx.constraintlayout.widget.ConstraintLayout>
