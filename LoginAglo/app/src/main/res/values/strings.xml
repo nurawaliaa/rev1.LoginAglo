@@ -1,7 +1,7 @@
 <resources>
     <string name="app_name">LoginAglo</string>
     <string name="buttonLogin">Log In</string>
-    <string name="todo">TODO</string>
+    <string name="todoo">TODO</string>
     <string name="email"> Email</string>
     <string name="pass">  Password</string>
     <string name="Login">Sign In</string>
@@ -36,7 +36,11 @@
     <string name="Hprices">Price</string>
     <string name="Hcond">Condition</string>
     <string name="ButtonCancel">cancel button</string>
-    <string name="buttonSave">save button</string>
+    <string name="buttonSave">Save</string>
+    <string name="tv_N">Nama     : </string>
+    <string name="tv_A">Jumlah   : </string>
+    <string name="tv_P">Price    : </string>
+    <string name="tv_E">Edit</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="title_activity_navigation">MainActivity</string>
@@ -44,5 +48,7 @@
     <string name="title_dashboard">Stock</string>
     <string name="title_notifications">Report</string>
     <string name="title_activity_bottom_nav">MainActivity</string>
+    <string name="todo">TODO</string>
+
 
 </resources>

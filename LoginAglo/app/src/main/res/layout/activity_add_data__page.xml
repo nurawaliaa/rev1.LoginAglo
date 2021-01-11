@@ -3,241 +3,119 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/buttonsaveNew"
+    android:background="@drawable/bggradient"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".addData_Page">
 
     <androidx.constraintlayout.widget.ConstraintLayout
-        android:id="@+id/constraintLayout2"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        tools:context=".add">
+        android:background="@drawable/bggradient"
 
-        <androidx.constraintlayout.widget.ConstraintLayout
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:background="#204028"
-            tools:context=".cekStok"
-            tools:layout_editor_absoluteX="16dp"
-            tools:layout_editor_absoluteY="62dp">
+        tools:context=".cekStok"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="0dp">
 
-            <androidx.constraintlayout.widget.Guideline
-                android:id="@+id/guideline2"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:orientation="vertical"
-                app:layout_constraintGuide_end="430dp" />
+        <EditText
+            android:id="@+id/addName"
+            android:layout_width="357dp"
+            android:layout_height="43dp"
+            android:layout_marginTop="196dp"
+            android:layout_marginEnd="32dp"
+            android:autofillHints=""
+            android:backgroundTint="#FFFFFF"
+            android:ems="10"
+            android:hint="@string/Hname"
+            android:inputType="textPersonName"
+            android:textColor="#FFFFFF"
+            android:textColorHint="#272323"
+            android:visibility="visible"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
 
-            <androidx.constraintlayout.widget.Guideline
-                android:id="@+id/guideline3"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:orientation="vertical"
-                app:layout_constraintGuide_end="32dp" />
+        <Spinner
+            android:id="@+id/spinCond"
+            android:layout_width="356dp"
+            android:layout_height="44dp"
+            android:layout_marginTop="18dp"
+            android:layout_marginEnd="32dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/addName" />
 
-            <androidx.constraintlayout.widget.Guideline
-                android:id="@+id/guideline5"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:orientation="horizontal"
-                app:layout_constraintGuide_begin="242dp" />
+        <EditText
+            android:id="@+id/addAmount"
+            android:layout_width="357dp"
+            android:layout_height="43dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="32dp"
+            android:autofillHints=""
+            android:backgroundTint="#FFFFFF"
+            android:ems="10"
+            android:hint="@string/Hamount"
+            android:inputType="number"
+            android:textColor="#FFFFFF"
+            android:textColorHint="#272323"
+            android:visibility="visible"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/spinCond" />
 
-            <androidx.constraintlayout.widget.Guideline
-                android:id="@+id/guideline12"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:orientation="horizontal"
-                app:layout_constraintGuide_begin="174dp" />
+        <EditText
+            android:id="@+id/addPrices"
+            android:layout_width="357dp"
+            android:layout_height="43dp"
+            android:layout_marginTop="72dp"
+            android:layout_marginEnd="32dp"
+            android:autofillHints=""
+            android:backgroundTint="#FFFFFF"
+            android:ems="10"
+            android:inputType="numberDecimal"
+            android:hint="@string/Hprices"
 
-            <androidx.constraintlayout.widget.Guideline
-                android:id="@+id/guideline13"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:orientation="horizontal"
-                app:layout_constraintGuide_begin="278dp" />
+            android:textColor="#FFFFFF"
+            android:textColorHint="#272323"
+            android:visibility="visible"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/spinCond" />
 
-            <androidx.constraintlayout.widget.Guideline
-                android:id="@+id/guideline14"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:orientation="horizontal"
-                app:layout_constraintGuide_begin="349dp" />
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_end="434dp" />
 
-            <EditText
-                android:id="@+id/addId"
-                android:layout_width="357dp"
-                android:layout_height="43dp"
-                android:layout_marginTop="128dp"
-                android:layout_marginEnd="32dp"
-                android:autofillHints=""
-                android:backgroundTint="#FFFFFF"
-                android:ems="10"
-                android:hint="@string/HaddId"
-                android:inputType="textPersonName"
-                android:textColor="#FFFFFF"
-                android:textColorHint="#272323"
-                android:visibility="visible"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintTop_toTopOf="parent" />
+        <ImageButton
+            android:id="@+id/buttonCancel"
+            style="@style/Widget.AppCompat.ImageButton"
+            android:layout_width="39dp"
+            android:layout_height="29dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="20dp"
+            android:background="#008A6262"
+            android:contentDescription="@string/todo"
+            android:onClick="onClick"
+            android:scaleType="fitXY"
+            android:src="@drawable/ic_baseline_arrow_back_ios_24"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
 
-            <EditText
-                android:id="@+id/addName"
-                android:layout_width="357dp"
-                android:layout_height="43dp"
-                android:layout_marginTop="24dp"
-                android:layout_marginEnd="32dp"
-                android:autofillHints=""
-                android:backgroundTint="#FFFFFF"
-                android:ems="10"
-                android:hint="@string/Hname"
-                android:inputType="textPersonName"
-                android:textColor="#FFFFFF"
-                android:textColorHint="#272323"
-                android:visibility="visible"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintTop_toTopOf="@+id/guideline12" />
+        <ImageButton
+            android:id="@+id/buttonSave"
+            android:layout_width="36dp"
+            android:layout_height="34dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="28dp"
+            android:background="#00FFFFFF"
+            android:onClick="onClick"
+            android:scaleType="fitXY"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/save" />
 
-            <EditText
-                android:id="@+id/addAmount"
-                android:layout_width="357dp"
-                android:layout_height="43dp"
-                android:layout_marginTop="24dp"
-                android:layout_marginEnd="32dp"
-                android:autofillHints=""
-                android:backgroundTint="#FFFFFF"
-                android:ems="10"
-                android:hint="@string/Hamount"
-                android:inputType="textPersonName"
-                android:textColor="#FFFFFF"
-                android:textColorHint="#272323"
-                android:visibility="visible"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/spinCond" />
 
-            <EditText
-                android:id="@+id/addPrices"
-                android:layout_width="357dp"
-                android:layout_height="43dp"
-                android:layout_marginTop="80dp"
-                android:layout_marginEnd="32dp"
-                android:autofillHints=""
-                android:backgroundTint="#FFFFFF"
-                android:ems="10"
-                android:hint="@string/Hprices"
-                android:inputType="text"
-                android:textColor="#FFFFFF"
-                android:textColorHint="#272323"
-                android:visibility="visible"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/spinCond" />
 
-            <Spinner
-                android:id="@+id/spinCond"
-                android:layout_width="356dp"
-                android:layout_height="44dp"
-                android:layout_marginTop="24dp"
-                android:layout_marginEnd="32dp"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintTop_toTopOf="@+id/guideline5" />
-
-            <ImageButton
-                android:id="@+id/buttonSave"
-                android:layout_width="356dp"
-                android:layout_height="37dp"
-                android:layout_marginEnd="52dp"
-                android:layout_marginBottom="4dp"
-                android:background="@android:color/transparent"
-                android:contentDescription="@string/buttonSave"
-                android:scaleType="fitXY"
-                app:layout_constraintBottom_toTopOf="@+id/buttonCancel"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:srcCompat="@drawable/save" />
-
-            <ImageButton
-                android:id="@+id/buttonCancel"
-                android:layout_width="356dp"
-                android:layout_height="35dp"
-                android:layout_marginEnd="32dp"
-                android:background="@android:color/transparent"
-                android:contentDescription="@string/ButtonCancel"
-                android:scaleType="fitXY"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:srcCompat="@drawable/cancel" />
-
-            <ListView
-                android:id="@+id/lv_item"
-                android:layout_width="361dp"
-                android:layout_height="160dp"
-                android:layout_marginBottom="44dp"
-                app:layout_constraintBottom_toTopOf="@+id/buttonCancel"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.32"
-                app:layout_constraintStart_toStartOf="parent" />
-
-        </androidx.constraintlayout.widget.ConstraintLayout>
     </androidx.constraintlayout.widget.ConstraintLayout>
-
-    <ImageView
-        android:id="@+id/imageView5"
-        android:layout_width="218dp"
-        android:layout_height="83dp"
-        android:layout_marginTop="16dp"
-        android:layout_marginEnd="236dp"
-        android:background="@android:color/transparent"
-        android:contentDescription="@string/Logo"
-        android:scaleType="fitStart"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/logo_olahwht" />
-
-    <androidx.constraintlayout.widget.Guideline
-        android:id="@+id/guideline15"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        app:layout_constraintGuide_end="663dp" />
-
-    <androidx.constraintlayout.widget.Guideline
-        android:id="@+id/guideline16"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:orientation="vertical"
-        app:layout_constraintGuide_end="391dp" />
-
-    <androidx.constraintlayout.widget.Guideline
-        android:id="@+id/guideline17"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:orientation="vertical"
-        app:layout_constraintGuide_end="32dp" />
-
-    <androidx.constraintlayout.widget.Guideline
-        android:id="@+id/guideline18"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        app:layout_constraintGuide_begin="242dp" />
-
-    <androidx.constraintlayout.widget.Guideline
-        android:id="@+id/guideline19"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        app:layout_constraintGuide_begin="174dp" />
-
-    <androidx.constraintlayout.widget.Guideline
-        android:id="@+id/guideline20"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        app:layout_constraintGuide_begin="278dp" />
-
-    <androidx.constraintlayout.widget.Guideline
-        android:id="@+id/guideline21"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        app:layout_constraintGuide_begin="349dp" />
-
 </androidx.constraintlayout.widget.ConstraintLayout>
+
+

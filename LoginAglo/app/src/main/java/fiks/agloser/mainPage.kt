@@ -34,5 +34,11 @@ class mainPage : AppCompatActivity() {
 
         }
 
+        buttonCekStock.setOnClickListener{
+            val intent = Intent (this@mainPage, cekStock::class.java)
+            startActivity(intent)
+
+        }
+
     }
 }
